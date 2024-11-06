@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Barbara Romano</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="other/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  </head>
+  <body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <img
+        src="img/barbara-perfil.jpg"
+        style="width: 100%"
+        alt="Barbara, a professional woman with a warm smile, standing in front of a city skyline. She wears a plaid blazer, exuding confidence and approachability."
+      />
+
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a
+        href="#about"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a
+        href="#projects"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-briefcase w3-xxlarge"></i>
+        <p>PROJECTS</p>
+      </a>
+      <a
+        href="#resume"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-file-text w3-xxlarge"></i>
+        <p>RESUME</p>
+      </a>
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div
+        class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"
+      >
+        <a href="#" class="w3-bar-item w3-button" style="width: 20% !important"
+          >HOME</a
+        >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          style="width: 20% !important"
+          >ABOUT</a
+        >
+        <a
+          href="#projects"
+          class="w3-bar-item w3-button"
+          style="width: 20% !important"
+          >PROJECTS</a
+        >
+        <a
+          href="#resume"
+          class="w3-bar-item w3-button"
+          style="width: 20% !important"
+          >RESUME</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          style="width: 20% !important"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">I'm</span> Barbara Romano.
+        </h1>
+        <p>Programmer with a Strong Foundation in Mathematics.</p>
+        <img
+          src="img/barbara2.jpg"
+          alt="Barbara Romano, smiling and standing on a balcony with the Toronto skyline in the background, wearing a plaid blazer and exuding a professional and approachable demeanor."
+          class="profile-image"
+        />
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">About Me</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p>
+          Dedicated and focused Computer Programming student with a background
+          in mathematics and education, experienced in developing inclusive
+          educational resources and working with students with disabilities. I
+          am a fast learner, detail-oriented, and effective in problem-solving.
+          Currently expanding my skills in C programming and web development to
+          transition into a tech career.
+        </p>
+        <div
+          class="w3-content w3-justify w3-text-grey w3-padding-64"
+          id="about"
+        >
+          <h2 class="w3-text-light-grey">My Skills</h2>
+          <hr style="width: 200px" class="w3-opacity" />
+
+          <p class="w3-wide">C Programming</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height: 28px; width: 70%"></div>
+          </div>
+
+          <p class="w3-wide">SQL</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height: 28px; width: 50%"></div>
+          </div>
+
+          <p class="w3-wide">HTML & CSS</p>
+          <div class="w3-white">
+            <div class="w3-dark-grey" style="height: 28px; width: 35%"></div>
+          </div>
+        </div>
+
+        <!-- End About Section -->
+      </div>
+
+      <!-- Projects Section -->
+      <div class="w3-padding-64 w3-content" id="projects">
+        <h2 class="w3-text-light-grey">My Projects</h2>
+        <hr style="width: 200px; margin-bottom: 80px" class="w3-opacity" />
+
+        <h3 class="w3-text-light-grey" style="margin-bottom: 40px;">Web Development Projects: From Personal Portfolio to Sustainable Tourism"</h3>
+
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <!-- First Project Image and Description -->
+          <div class="w3-half">
+            <img
+              src="img/portifolio.png"
+              class="project-image"
+              alt="Barbara Romano's Personal Portfolio showcasing background, skills, and projects in a modern, organized layout."
+            />
+            <p style="color: white; text-align: center; padding-top: 8px">
+              This is my personal portfolio project, showcasing my background,
+              skills, and projects in a clean and organized layout.
+            </p>
+          </div>
+
+          <!-- Second Project Image and Description -->
+          <div class="w3-half">
+            <img
+              src="img/ecoTravel.png"
+              class="project-image"
+              alt="EcoTravel website focused on sustainable tourism, featuring top destinations, interactive maps, and detailed travel packages."
+            />
+            <p style="color: white; text-align: center; padding-top: 8px">
+              EcoTravel is a travel website focusing on sustainable
+              destinations, complete with a map, filters, and destination
+              highlights.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resume Section -->
+      <div class="w3-padding-64 w3-content" id="resume">
+        <h2 class="w3-text-light-grey">Resume</h2>
+        <hr style="width: 200px; margin-bottom: 40px" class="w3-opacity" />
+
+        <!-- Skills Section -->
+        <h3 class="w3-text-light-grey">Relevant Skills</h3>
+        <table class="skills-table">
+          <tr>
+            <th>Skill</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Programming</td>
+            <td>
+              Proficient in C programming, with foundational knowledge in
+              JavaScript, HTML, and CSS.
+            </td>
+          </tr>
+          <tr>
+            <td>Languages</td>
+            <td>
+              <ul>
+                <li>Portuguese: Native</li>
+                <li>English: Fluent</li>
+                <li>Spanish: Basic</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Education Section -->
+        <h3 class="w3-text-light-grey">Education</h3>
+        <table class="timeline-table">
+          <tr>
+            <td class="timeline-year">Ongoing</td>
+            <td class="timeline-content">
+              <h3 class="timeline-title">Computer Programming</h3>
+              <p class="timeline-description">Seneca College, Toronto, ON</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="timeline-year">Bachelor's Degree</td>
+            <td class="timeline-content">
+              <h3 class="timeline-title">B.Sc. Degree in Mathematics</h3>
+              <p class="timeline-description">
+                Universidade Federal Fluminense, Brazil
+              </p>
+              <p class="timeline-description">
+                Relevant coursework: Calculus, Probability and Statistics,
+                Linear Algebra, Analytical Geometry
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Work History Section -->
+        <h3 class="w3-text-light-grey">Work History</h3>
+        <div class="work-history-container">
+        <table class="work-history-table">
+            <tr>
+            <td class="timeline-year">2014 - 2019</td>
+            <td class="timeline-content">
+                <h3 class="timeline-title">Mathematics Teacher</h3>
+                <p class="timeline-description">Centro Educacional de Niterói & Instituto Educacional Daher</p>
+                <ul class="timeline-description">
+                <li>Led projects to enhance educational inclusivity, adapting teaching resources for students with special needs.</li>
+                <li>Collaborated in research projects focusing on improving learning outcomes for deaf and visually impaired students.</li>
+                </ul>
+            </td>
+            </tr>
+            <tr>
+            <td class="timeline-year">2013 - 2014</td>
+            <td class="timeline-content">
+                <h3 class="timeline-title">Administrative Assistant and Credit Analyst</h3>
+                <p class="timeline-description">Grupo AMI</p>
+                <ul class="timeline-description">
+                <li>Provided customer support, resolving queries, guiding clients on contracts, and conducting credit analyses.</li>
+                </ul>
+            </td>
+            </tr>
+            <tr>
+            <td class="timeline-year">2010 - 2011</td>
+            <td class="timeline-content">
+                <h3 class="timeline-title">Data Collector</h3>
+                <p class="timeline-description">Instituto Brasileiro de Geografia e Estatística (IBGE)</p>
+                <ul class="timeline-description">
+                <li>Collected and managed data for national surveys, engaging directly with the public.</li>
+                </ul>
+            </td>
+            </tr>
+        </table>
+        </div>
+        <!--Download Resume-->
+        <p>
+            <a href="doc/Barbara Romano-resume.docx" download="Barbara_Romano_Resume">
+              <button class="w3-button w3-light-grey w3-padding-large" type="button">
+                <i class="fa fa-download"></i> DOWNLOAD RESUME
+              </button>
+            </a>
+          </p>
+          
+
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <i
+              class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Toronto, ON
+          </p>
+          <p>
+            <i
+              class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Phone: +1 647-679-4371
+          </p>
+          <p>
+            <i
+              class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            >
+            </i>
+            Email: afr.barbara@gmail.com
+          </p>
+        </div>
+        <br />
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button
+              class="w3-button w3-light-grey w3-padding-large"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer-container">
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <i class="fa fa-facebook-official"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/barbara-romano"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+            href="https://x.com/babiromano"
+            target="_blank"
+            aria-label="X (formerly Twitter)"
+          >
+            <i class="fa fa-x"></i>
+            <!-- Custom class to represent the "X" symbol -->
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a> | <a href="#about">About</a> |
+          <a href="#projects">Projects</a> | <a href="#resume">Resume</a> |
+          <a href="#contact">Contact</a>
+        </div>
+
+        <p class="footer-text">© 2024 Barbara Romano. All rights reserved.</p>
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+  </body>
+</html>
