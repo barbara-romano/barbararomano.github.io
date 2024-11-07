@@ -28,7 +28,7 @@ h6 {
 }
 .profile-image {
   width: 100%; /* Full width */
-  height: 500px; /* Set fixed height */
+  height: auto; /* Set fixed height */
   object-fit: cover; /* Crop the image to fit the container */
   object-position: center; /* Center the image */
 }
