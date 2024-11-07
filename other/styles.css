@@ -1,228 +1,441 @@
 
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Montserrat", sans-serif;
-      }
-      .w3-row-padding img {
-        margin-bottom: 12px;
-      }
-      /* Set the width of the sidebar to 120px */
-      .w3-sidebar {
-        width: 120px;
-        background: #222;
-      }
-      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-      #main {
-        margin-left: 120px;
-      }
-      /* Remove margins from "page content" on small screens */
-      @media only screen and (max-width: 600px) {
-        #main {
-          margin-left: 0;
-        }
-      }
-      .profile-image {
-        width: 100%; /* Full width */
-        height: 500px; /* Set fixed height */
-        object-fit: cover; /* Crop the image to fit the container */
-        object-position: center; /* Center the image */
-      }
-      @media (max-width: 768px) {
-        .profile-image {
-          height: 300px;             /* Reduce height for tablets */
-        }
-      }
-      
-      @media (max-width: 480px) {
-        .profile-image {
-          height: 200px;             /* Further reduce height for small screens */
-        }
-      }
-      .project-image {
-        width: 100%;
-        max-width: 100%;
-        height: auto; /* Set a fixed height for uniformity */
-        object-fit: cover;
-        transition: transform 0.3s ease; /* Smooth transition for zoom effect */
-      }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+  margin-left: 120px;
+}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+}
+.profile-image {
+  width: 100%; /* Full width */
+  height: 500px; /* Set fixed height */
+  object-fit: cover; /* Crop the image to fit the container */
+  object-position: center; /* Center the image */
+}
+@media (max-width: 768px) {
+  .profile-image {
+    height: 300px;             /* Reduce height for tablets */
+  }
+}
 
-      .project-image:hover {
-        transform: scale(1.1); /* Zoom effect on hover */
-      }
+@media (max-width: 480px) {
+  .profile-image {
+    height: 200px;             /* Further reduce height for small screens */
+  }
+}
+.project-image {
+  width: 100%;
+  height: 300px; /* Set a fixed height for uniformity */
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
 
-      .project-description {
-        color: white;
-        text-align: center;
-        padding-top: 8px;
-      }
+.project-image:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
 
-      .project-container {
-        margin-bottom: 32px; /* Space between the images */
-      }
+.project-description {
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+}
 
-      .intro-paragraph {
-        color: white;
-        text-align: center;
-        font-size: 18px;
-        margin-bottom: 24px;
-      }
-      /* Skills Table */
-      /* Relevant Skills Table */
-      .skills-table {
-        width: 100%;
-        max-width: 1000px;
-        margin: 20px auto;
-        border-collapse: collapse;
-        color: #e0e0e0;
-        background-color: #2b2b2b;
-      }
+.project-container {
+  margin-bottom: 32px; /* Space between the images */
+}
 
-      .skills-table th {
-        background-color: #333;
-        color: #ffffff;
-        padding: 15px;
-        font-size: 16px;
-        text-align: left;
-        border-bottom: 2px solid #555;
-      }
+.intro-paragraph {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+/* Skills Table */
+/* Relevant Skills Table */
+.skills-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  color: #e0e0e0;
+  background-color: #2b2b2b;
+}
 
-      .skills-table td {
-        padding: 15px;
-        font-size: 15px;
-        border-bottom: 1px solid #444;
-      }
+.skills-table th {
+  background-color: #333;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 2px solid #555;
+}
 
-      .skills-table tr:last-child td {
-        border-bottom: none;
-      }
+.skills-table td {
+  padding: 15px;
+  font-size: 15px;
+  border-bottom: 1px solid #444;
+}
 
-      .skills-detail-list {
-        margin: 0;
-        padding-left: 20px;
-        list-style-type: disc;
-        color: #bbbbbb;
-      }
+.skills-table tr:last-child td {
+  border-bottom: none;
+}
 
-      .skills-detail-list li {
-        margin-bottom: 5px;
-      }
-      /* Timeline Table */
-      .timeline-table {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        border-collapse: collapse;
-        color: white;
-        margin-bottom: 40px;
-      }
+.skills-detail-list {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #bbbbbb;
+}
 
-      .timeline-table th,
-      .timeline-table td {
-        padding: 10px;
-        vertical-align: top;
-      }
+.skills-detail-list li {
+  margin-bottom: 5px;
+}
+/* Timeline Table */
+.timeline-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: white;
+  margin-bottom: 40px;
+}
 
-      .timeline-year {
-        background-color: #333;
-        color: white;
-        padding: 8px 12px;
-        border-radius: 4px;
-        font-weight: bold;
-        text-align: center;
-        width: 100px;
-      }
+.timeline-table th,
+.timeline-table td {
+  padding: 10px;
+  vertical-align: top;
+}
 
-      .timeline-content {
-        background-color: #222;
-        padding: 15px;
-        border-left: 4px solid white;
-        border-radius: 4px;
-      }
+.timeline-year {
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+}
 
-      .timeline-title {
-        font-size: 18px;
-        font-weight: bold;
-        color: white;
-        margin: 0 0 5px;
-      }
+.timeline-content {
+  background-color: #222;
+  padding: 15px;
+  border-left: 4px solid white;
+  border-radius: 4px;
+}
 
-      .timeline-description {
-        font-size: 14px;
-        color: #bbb;
-      }
+.timeline-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 5px;
+}
 
-      /* Scrollable container for Work History */
-      .work-history-container {
-        max-height: 300px; 
-        overflow-y: auto;
-       
-      }
+.timeline-description {
+  font-size: 14px;
+  color: #bbb;
+}
 
-      .work-history-table {
-        width: 100%;
-        border-collapse: collapse;
-        color: #e0e0e0;
-      }
+/* Scrollable container for Work History */
+.work-history-container {
+  max-height: 300px; 
+  overflow-y: auto;
+ 
+}
 
-      .timeline-year {
-        background-color: #333;
-        color: white;
-        padding: 8px 12px;
-        border-radius: 4px;
-        font-weight: bold;
-        text-align: center;
-        width: 100px;
-      }
+.work-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e0e0e0;
+}
 
-      .timeline-content {
-        background-color: #222;
-        padding: 15px;
-        border-left: 4px solid white;
-        border-radius: 4px;
-      }
+.timeline-year {
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+}
 
-      /* Continuous Footer Bar Styling */
-      .footer-container {
-        background-color: #222;
-        color: #e0e0e0;
-        padding: 20px 0;
-        text-align: center;
-        font-size: 14px;
-        width: 100%;
-        position: relative;
-        bottom: 0;
-      }
+.timeline-content {
+  background-color: #222;
+  padding: 15px;
+  border-left: 4px solid white;
+  border-radius: 4px;
+}
 
-      .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-bottom: 15px;
-      }
+/* Continuous Footer Bar Styling */
+.footer-container {
+  background-color: #222;
+  color: #e0e0e0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
 
-      .social-icons a {
-        color: #e0e0e0;
-        font-size: 18px;
-        text-decoration: none;
-      }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
 
-      .social-icons a:hover {
-        color: #ffffff;
-      }
+.social-icons a {
+  color: #e0e0e0;
+  font-size: 18px;
+  text-decoration: none;
+}
 
-      .footer-links a {
-        color: #e0e0e0;
-        text-decoration: none;
-        margin: 0 10px;
-        font-size: 16px;
-      }
+.social-icons a:hover {
+  color: #ffffff;
+}
 
-      .footer-links a:hover {
-        color: #ffffff;
-      }
-    
+.footer-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+  margin-left: 120px;
+}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+}
+.profile-image {
+  width: 50%; /* Full width */
+  height: 500px; /* Set fixed height */
+  object-fit: cover; /* Crop the image to fit the container */
+  object-position: center; /* Center the image */
+}
+.project-image {
+  width: 100%;
+  height: 300px; /* Set a fixed height for uniformity */
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.project-image:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.project-description {
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.project-container {
+  margin-bottom: 32px; /* Space between the images */
+}
+
+.intro-paragraph {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+/* Skills Table */
+/* Relevant Skills Table */
+.skills-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  color: #e0e0e0;
+  background-color: #2b2b2b;
+}
+
+.skills-table th {
+  background-color: #333;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 2px solid #555;
+}
+
+.skills-table td {
+  padding: 15px;
+  font-size: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.skills-table tr:last-child td {
+  border-bottom: none;
+}
+
+.skills-detail-list {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #bbbbbb;
+}
+
+.skills-detail-list li {
+  margin-bottom: 5px;
+}
+/* Timeline Table */
+.timeline-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.timeline-table th,
+.timeline-table td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.timeline-year {
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+}
+
+.timeline-content {
+  background-color: #222;
+  padding: 15px;
+  border-left: 4px solid white;
+  border-radius: 4px;
+}
+
+.timeline-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 5px;
+}
+
+.timeline-description {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Scrollable container for Work History */
+.work-history-container {
+  max-height: 300px; 
+  overflow-y: auto;
+ 
+}
+
+.work-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e0e0e0;
+}
+
+.timeline-year {
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+}
+
+.timeline-content {
+  background-color: #222;
+  padding: 15px;
+  border-left: 4px solid white;
+  border-radius: 4px;
+}
+
+/* Continuous Footer Bar Styling */
+.footer-container {
+  background-color: #222;
+  color: #e0e0e0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #e0e0e0;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.footer-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
